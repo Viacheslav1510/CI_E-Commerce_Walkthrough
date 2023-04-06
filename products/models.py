@@ -13,6 +13,10 @@ class Category(models.Model):
 
 
 class Product(models.Model):
+
+    class Meta:
+        verbose_name_plural = 'Categories'
+
     category = models.ForeignKey(
         'Category',
         null=True, blank=True,
