@@ -1,4 +1,5 @@
 from django.contrib import admin
+from .models import OrderLineItem, Order
 
 
 class OrderLineItemAdminInline(admin.TabularInline):
